@@ -78,7 +78,7 @@
 -   id: go-generate
     name: 'go-generate'
     entry: run-go-generate.sh
-    files: '\.go$'
+    files: '\.(go|sum|mod)$'
     language: 'script'
     description: "Runs `go generate`, requires golang"
 -   id: go-mod-tidy
