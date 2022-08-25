@@ -9,6 +9,6 @@ if ! command -v gofmt &> /dev/null ; then
     exit 1
 fi
 
-output="$(goimports -l -w "$@")"
+output="$(gofmt -l -w "$@")"
 [[ -z "$output" ]] && exit 0
-echo "imports changed, please re-add to commit"
+echo "files formatted, please re-add to commit" 
